@@ -1,0 +1,1 @@
+const cardDim = 100

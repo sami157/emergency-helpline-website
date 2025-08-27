@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="w-[95%] mx-auto">
-    <nav class="nav-area my-5 flex justify-between border-red-500 border-1">
+    <nav class="nav-area my-5 flex justify-between border-red-500">
         <div class="nav-left flex gap-2 font-bold items-center">
-            <div class="nav-logo w-15 border-1"><img src="assets/logo.png" alt=""></div>
-            <div class="nav-text border-1">
-                <div class="text-xl font-extrabold border-1 text-[#006747]">Emergency</div>
-                <div class="text-xl font-extrabold border-1 text-[#006747]">Service</div>
+            <div class="nav-logo w-15"><img src="assets/logo.png" alt=""></div>
+            <div class="nav-text">
+                <div class="text-xl font-extrabold text-[#006747]">Emergency</div>
+                <div class="text-xl font-extrabold text-[#006747]">Service</div>
             </div>
         </div>
-        <div class="nav-right font-bold flex gap-5 items-center justify-between border-red-950 border-1">
+        <div class="nav-right font-bold flex gap-5 items-center justify-between border-red-950">
             <div class="heart-container h-12 flex px-5 bg-[#41FF6B]/10 rounded-3xl items-center justify-center">
                 <div class="heart-logo w-8 mx-1"><img src="assets/heart.png" alt=""></div>
                 <div class="heart-count mr-1">5</div>
@@ -41,9 +41,9 @@
             <p class="banner-subtitle text-center py-2 my-1">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </section>
-    <section class="main-section border-red-500 border-2 bg-[#41FF6B]/10 flex gap-5px">
-        <div class="number-grid border-1">
-            <div class="card-container bg-white rounded-xl min-w-50 min-h-50 p-3">
+    <section class="main-section border-red-500 border-2 bg-[#41FF6B]/10 flex gap-5px py-5">
+        <div class="number-grid">
+            <div class="card-container bg-white rounded-xl min-w-[426px] min-h-[360px] p-6">
                 <div class="card-top flex items-center justify-between">
                       <div class="bg-[#FFE3E2] left-card rounded-xl w-10 p-3">
                         <img src="assets/emergency.png" alt="">
@@ -52,24 +52,35 @@
                         <i class="fa-thin fa-regular fa-heart"></i>
                       </div>  
                 </div>
-                <div class="card-body">
-                    <div>
-                        <h2 class="text-xl font-bold">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-gray-400 text-sm">National Emergency</p>
+                <div class="card-body p-0">
+                    <div class="mb-3">
+                        <h2 class="text-xl text-[24px] font-bold">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-gray-400 text-[18px]">National Emergency</p>
                     </div>
-                    <div>
-                        <p class="font-bold text-2xl">999</p>
-                        <div class="tag bg-[#F2F2F2] rounded-xl px-2 w-20">
-                            <p class="text-center text-[#5C5C5C]">সার্বজনীন</p>
+                    <div class="mb-3">
+                        <p class="font-bold text-[32px]">999</p>
+                        <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
+                        <p class="text-center text-[#5C5C5C] text-[25px]">সার্বজনীন</p>
                         </div>
                     </div>
-                    <div class="button-group flex items-center">
-                        <button class="copy-button"></button>
+                    <div class="button-group flex justify-stretch gap-3">    
+                            <button class="btn grow h-[40px] rounded-lg border-gray-300">
+                                <div class="flex gap-1.5 items-center">
+                                    <i class="fa-solid fa-copy"></i>
+                                    <p class="text-left">Copy</p>
+                                </div>
+                            </button>
+                            <button class="btn grow h-[40px] rounded-lg bg-[#00A63E]">
+                                <div class="flex gap-1.5 items-center">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <p class="text-white">Call</p>
+                                </div>
+                            </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="call-history border-1"></div>
+        <div class="call-history"></div>
     </section>
 </body>
 <script src="dom-code.js"></script>
