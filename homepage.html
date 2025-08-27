@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/fd13c48f18.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="mx-30">
+<body class="w-[95%] mx-auto">
     <nav class="nav-area my-5 flex justify-between border-red-500 border-1">
         <div class="nav-left flex gap-2 font-bold items-center">
             <div class="nav-logo w-15 border-1"><img src="assets/logo.png" alt=""></div>
@@ -33,13 +35,41 @@
         </div>
     </nav>
     <section class="banner-section">
-        <div class="border-1 text-white banner-container py-4 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
-            <img class="border-1 max-w-30 banner-logo mx-auto" src="assets/logo-dark.png" alt="">
-            <p class="border-1 banner-title text-center text-4xl font-bold">জরুরী সেবা ডিরেক্টরি</p>
-            <p class="border-1 banner-subtitle text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <div class="text-white banner-container py-4 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <img class="max-w-30 banner-logo mx-auto" src="assets/logo-dark.png" alt="">
+            <p class="banner-title text-center text-4xl font-bold py-2 my-1">জরুরী সেবা ডিরেক্টরি</p>
+            <p class="banner-subtitle text-center py-2 my-1">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </section>
-    <section class=" bg-[#41FF6B]/10 main-section">
+    <section class="main-section border-red-500 border-2 bg-[#41FF6B]/10 flex gap-5px">
+        <div class="number-grid border-1">
+            <div class="card-container bg-white rounded-xl min-w-50 min-h-50 p-3">
+                <div class="card-top flex items-center justify-between">
+                      <div class="bg-[#FFE3E2] left-card rounded-xl w-10 p-3">
+                        <img src="assets/emergency.png" alt="">
+                      </div>
+                      <div class="right-icon">
+                        <i class="fa-thin fa-regular fa-heart"></i>
+                      </div>  
+                </div>
+                <div class="card-body">
+                    <div>
+                        <h2 class="text-xl font-bold">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-gray-400 text-sm">National Emergency</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-2xl">999</p>
+                        <div class="tag bg-[#F2F2F2] rounded-xl px-2 w-20">
+                            <p class="text-center text-[#5C5C5C]">সার্বজনীন</p>
+                        </div>
+                    </div>
+                    <div class="button-group flex items-center">
+                        <button class="copy-button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="call-history border-1"></div>
     </section>
 </body>
 <script src="dom-code.js"></script>
