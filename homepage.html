@@ -7,27 +7,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="nav-area flex justify-between border-red-500 border-2">
-        <div class="nav-left flex items-center">
-            <div class="nav-logo">Logo Image</div>
-            <div class="nav-text">
-                <div>Emergency</div>
-                <div>Service</div>
+<body class="mx-30">
+    <nav class="nav-area my-5 flex justify-between border-red-500 border-1">
+        <div class="nav-left flex font-bold items-center">
+            <div class="nav-logo w-12 mr-2 border-1"><img src="assets/logo.png" alt=""></div>
+            <div class="nav-text border-1">
+                <div class="text-xl text-[#006747]">Emergency</div>
+                <div class="text-xl text-[#006747]">Service</div>
             </div>
         </div>
-        <div class="nav-right flex items-center">
-            <div class="nav-heart flex">
-                <div class="heart-logo">Heart Logo</div>
-                <div class="heart-count">5</div>
+        <div class="nav-right font-bold flex items-center justify-between border-red-950 border-1">
+            <div class="heart-container h-12 mr-10 flex px-5 bg-[#41FF6B]/10 rounded-3xl items-center justify-center">
+                <div class="heart-logo w-8 p-1 mx-1"><img src="assets/heart.png" alt=""></div>
+                <div class="heart-count mr-1">5</div>
             </div>
-            <div class="nav-coin flex">
-                <div class="coin-logo">Coin Logo</div>
-                <div class="coin-count">100</div>
+            <div class="coin-container h-12 mr-10 flex px-5 bg-[#41FF6B]/10 rounded-3xl items-center justify-center">
+                <div class="heart-logo w-8 p-1 mx-1"><img src="assets/coin.png" alt=""></div>
+                <div class="heart-count mr-1">100</div>
             </div>
-            <div class="nav-copy flex">
-                <div class="copy-logo">Copy Logo</div>
-                <div class="copy-count">2</div>
+            <div class="copy-container h-12 flex px-8 bg-[#00A63E] rounded-3xl items-center justify-center">
+                <div class="copy-background"></div>
+                <div class="copy-count-text text-white">2 Copy</div>
+            </div>
             </div>
         </div>
     </nav>
