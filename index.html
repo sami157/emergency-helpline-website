@@ -20,14 +20,16 @@
         </div>
         <div class="nav-right flex flex-col font-bold bg-[#41FF6B]/10 rounded-[12px] px-[18px] py-[6px] lg:bg-white lg:flex-row lg:h-[50px] lg:gap-[20px] items-center lg:justify-center">
             <div class="heart-container flex gap-[10px] w-[60px] lg:w-[120px] lg:p-[12px] lg:bg-[#41FF6B]/10 rounded-full items-center justify-center">
-                <div class="heart-count font-[16px]">5</div>
+                <div id="heart-count" class="font-[16px]">5</div>
                 <div class="heart-logo w-[30px]"><img src="assets/heart.png" alt=""></div>
             </div>
-            <div class="heart-container flex gap-[10px] w-[60px] lg:w-[120px] lg:p-[12px] lg:bg-[#41FF6B]/10 rounded-full items-center justify-center">
-                <div class="heart-count text-[16px]">100</div>
-                <div class="heart-logo w-[30px]"><img src="assets/coin.png" alt=""></div>
+            <div class="coin-container flex gap-[10px] w-[60px] lg:w-[120px] lg:p-[12px] lg:bg-[#41FF6B]/10 rounded-full items-center justify-center">
+                <div id="coin-count" class="text-[16px]">100</div>
+                <div class="coin-logo w-[30px]"><img src="assets/coin.png" alt=""></div>
             </div>
-            <div class="flex items-center justify-center copy-count-text text-[16px] lg:h-[50px] w-[60px] lg:w-[120px] lg:text-white bg-none rounded-full lg:bg-[#00A63E]"><p>2 Copy</p></div>
+            <div class="flex items-center justify-center text-[16px] lg:h-[50px] w-[60px] lg:w-[120px] lg:text-white bg-none rounded-full lg:bg-[#00A63E]">
+                <p id="copy-count">2 Copy</p>
+            </div>
         </div>
     </nav>
     <section class="banner-section">
@@ -56,17 +58,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">999</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">সার্বজনীন</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">সার্বজনীন</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -92,17 +94,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">999</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">পুলিশ</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">পুলিশ</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -128,17 +130,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">999</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">ফায়ার</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">ফায়ার</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -164,17 +166,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">1994-999999</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">স্বাস্থ্য</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">স্বাস্থ্য</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -200,17 +202,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">109</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">সহায়তা</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">সহায়তা</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -236,17 +238,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">106</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">সরকারি</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">সরকারি</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -272,17 +274,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">16216</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">বিদ্যুৎ</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">বিদ্যুৎ</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -308,17 +310,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">16445</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">এনজিও</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">এনজিও</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -344,17 +346,17 @@
                     <div class="mb-[24px]">
                         <p class="font-bold text-[32px]">163</p>
                         <div class="tag bg-[#F2F2F2] rounded-[32px] px-[20px] w-[120px] py-[5px]">
-                        <p class="text-center text-[#5C5C5C] text-[25px]">পরিবহন</p>
+                        <p class="text-center text-[#5C5C5C] text-[18px]">পরিবহন</p>
                         </div>
                     </div>
                     <div class="button-group flex justify-stretch gap-[6px]">    
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
+                            <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
                                     <p class="text-[16px] text-gray-500">Copy</p>
                                 </div>
                             </button>
-                            <button class="btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
+                            <button class="call-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg bg-[#00A63E]">
                                 <div class="flex gap-1.5 items-center">
                                     <img class="w-[16px] invert" src="assets/phone-call.png" alt="">
                                     <p class="text-white text-[16px]">Call</p>
@@ -385,6 +387,6 @@
             </div>
         </div>
     </section>
+    <script src="dom-code.js"></script>
 </body>
-<script src="dom-code.js"></script>
 </html>
