@@ -349,7 +349,7 @@
                         <p class="text-center text-[#5C5C5C] text-[18px]">পরিবহন</p>
                         </div>
                     </div>
-                    <div class="button-group flex justify-stretch gap-[6px]">    
+                <div class="button-group flex justify-stretch gap-[6px]">    
                             <button class="copy-button btn grow w-[calc(50%-3px)] h-[40px] rounded-lg border-gray-300">
                                 <div class="flex gap-1.5 items-center">
                                     <i class="fa-solid fa-copy text-[16px]"></i>
@@ -362,11 +362,11 @@
                                     <p class="text-white text-[16px]">Call</p>
                                 </div>
                             </button>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
-        <div class="call-history shadow-[0px_2px_3px] shadow-black/15 bg-white rounded-[12px] p-[24px] grow">
+        <div id="call-history-container" class="shadow-[0px_2px_3px] shadow-black/15 bg-white rounded-[12px] p-[24px] grow">
             <div class="history-title h-[50px] flex justify-between mb-[16px]">
                 <div class="call-history flex gap-[4px] items-center">
                     <i class="fa-regular fa-clock text-[24px]"></i>
@@ -376,16 +376,17 @@
                     <div class="clear-text text-[16px] font-bold text-white">Clear</div>
                 </div>
             </div>
-            <div class="history-cards flex flex-col gap-[8px]">
-                <div class="history-card text-[18px] rounded-[12px] p-[16px] flex justify-between bg-[#FAFAFA]">
-                    <div class="call-history-card-left gap-[4px] items-center">
-                        <p>জাতীয় জরুরি সেবা</p>
-                        <p>999</p>
-                    </div>
-                    <div class="flex items-center copy-count-text">11:36:58 AM</div>
-                </div>
-            </div>
+            <div id="history-card-list" class="flex flex-col gap-[8px]">
+
         </div>
+        </div>
+    <!-- <div class="history-card text-[18px] rounded-[12px] p-[16px] flex justify-between bg-[#FAFAFA]">
+        <div class="history-card-left gap-[4px] items-center">
+            <p>জাতীয় জরুরি সেবা</p>
+            <p>999</p>
+        </div>
+        <div class="flex items-center copy-count-text">11:36:58 AM</div>
+    </div> -->
     </section>
     <script src="dom-code.js"></script>
 </body>
