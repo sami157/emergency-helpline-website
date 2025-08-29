@@ -16,10 +16,11 @@ function processClick(
     countLimitType,
     countLimit,
     countLimitMessage,
-    extraText
+    extraText,
+    clickMessage
  ){
     for (let target of document.getElementsByClassName(inputClass)){
-    target.addEventListener('click', function(){
+    target.addEventListener('click', function(event){
         if(hasCountLimit){
             if(countLimitType==='u'){
                 if(count>=countLimit){
@@ -36,10 +37,20 @@ function processClick(
         }
         else count = count + countStep;
         document.getElementById(targetID).innerText = count + extraText
-        console.log('clicked')
+        let callNumber = event.currentTarget.parentElement.parentElement.children[1].children[0].innerText
+        let callName = event.currentTarget.parentElement.parentElement.children[0].children[1].innerText
+        if(clickMessage!==null){
+            if(inputClass==='call-button'){
+                alert('Calling '+ callName + ' ' + '('+ callNumber + ')')
+            }
+            else if(inputClass==='copy-button'){
+                navigator.clipboard.writeText(callNumber);
+                alert(callNumber + ' copied to clipboard')
+            }
+        }
         })
     }
 }
-processClick('fa-heart',heartCount,'heart-count',1,false,'',0,'','');
-processClick('call-button',coinCount,'coin-count',-20,true,'l',0,'','');
+processClick('fa-heart',heartCount,'heart-count',1,false,'',0,'','','');
+processClick('call-button',coinCount,'coin-count',-20,true,'l',0,'','',);
 processClick('copy-button',copyCount,'copy-count',1,false,'',0,'',' Copy');
