@@ -55,7 +55,7 @@ function processClick(
                     let callHistoryContainer = document.getElementById('call-history-container')
                     let listItemContainer = callHistoryContainer.children[1]
                     let listItem = document.createElement('div')
-                    listItem.classList.add("text-[18px]", "rounded-[12px]", "p-[16px]", "flex", "justify-between", "bg-[#FAFAFA]")
+                    listItem.classList.add("text-[18px]", "rounded-[12px]", "p-[16px]", "flex", "justify-between", "bg-[#F2F2F2]")
                     listItem.innerHTML = '<div class="history-card-left gap-[4px] items-center"><p>'+ callName+'</p><p>'+callNumber+'</p></div><div class="flex items-center copy-count-text">'+ time + '</div>'
                     listItemContainer.appendChild(listItem)
                     alert('Calling '+ callName + ' ' + '('+ callNumber + ')')
