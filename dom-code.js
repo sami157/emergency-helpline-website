@@ -25,7 +25,6 @@ function processClick(
     target.addEventListener('click', function(event){
         if(inputClass==='clear-button'){
                 document.getElementById('call-history-container').children[1].innerHTML = ''
-                console.log('I am clicked')
         }
         else{
         if(hasCountLimit){
@@ -49,7 +48,7 @@ function processClick(
         if(clickMessage!==null){
             if(inputClass==='call-button'){
                 if(!canCall){
-                    alert("Can't place call, no coins remaining")
+                    alert("Can't place call! At least " + Math.abs(countStep) + ' coins required')
                 }
                 else {
                     let time = new Date().toLocaleTimeString()
